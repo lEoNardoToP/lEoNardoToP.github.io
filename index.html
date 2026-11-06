@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leonardo Rosati — software engineer focused on AI infrastructure, backend systems and reliable, testable software.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Leonardo Rosati · AI Infrastructure & Software Engineering</title>
+  <style>
+    :root {color-scheme: dark; --bg:#0b1020; --surface:#111a2d; --line:#293750; --text:#eaf0ff; --muted:#a5b4cb; --accent:#7de3c2;}
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0; background:radial-gradient(circle at 80% 2%,#1d3853 0,transparent 34%),var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a {color:var(--accent);text-underline-offset:4px}
+    a:focus-visible {outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+    .wrap {width:min(1080px,calc(100% - 42px));margin:auto}
+    .top {display:flex;justify-content:space-between;align-items:center;gap:14px;padding:24px 0}
+    .brand {font-weight:750;letter-spacing:-.03em;font-size:1.08rem;color:var(--text);text-decoration:none}
+    .top nav {display:flex;gap:20px;flex-wrap:wrap;font-size:.93rem}
+    .hero {padding:105px 0 76px;border-bottom:1px solid var(--line)}
+    .eyebrow {color:var(--accent);font-size:.82rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+    h1 {font-size:clamp(2.8rem,7vw,5.3rem);line-height:1.07;max-width:850px;letter-spacing:-.06em;margin:16px 0 20px}
+    .intro {font-size:clamp(1.05rem,2vw,1.3rem);max-width:730px;color:var(--muted)}
+    .actions {display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+    .btn {display:inline-flex;align-items:center;min-height:46px;padding:10px 18px;border:1px solid var(--accent);border-radius:9px;font-weight:700;text-decoration:none;color:#07151a;background:var(--accent)}
+    .btn.secondary {background:transparent;color:var(--text);border-color:#53627a}
+    section {padding:66px 0}
+    h2 {font-size:clamp(1.6rem,3vw,2rem);line-height:1.2;letter-spacing:-.035em;margin:0 0 13px}
+    .sub {color:var(--muted);max-width:700px;margin:0 0 28px}
+    .cards {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    article {padding:26px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#17243a,var(--surface));}
+    article h3 {font-size:1.45rem;letter-spacing:-.025em;margin:8px 0 8px}
+    article p {color:var(--muted);margin-top:0}
+    .kicker {font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    .facts {margin:18px 0;padding-left:20px;color:var(--text)}
+    .facts li {margin-bottom:6px}
+    .details {display:grid;grid-template-columns:1fr 1fr;gap:40px;border-top:1px solid var(--line)}
+    .details p {color:var(--muted)}
+    .code {font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#263950;padding:2px 6px;border-radius:5px;font-size:.88em;color:#e8f7ff}
+    footer {padding:35px 0 55px;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+    @media (max-width:700px){.hero{padding:72px 0 54px}.cards,.details{grid-template-columns:1fr}.top{align-items:flex-start}.top nav{gap:12px}article{padding:21px}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/">Leonardo Rosati</a>
+    <nav aria-label="Primary">
+      <a href="#work">Selected work</a>
+      <a href="#approach">Engineering approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="wrap hero">
+      <p class="eyebrow">AI infrastructure · Backend · Systems</p>
+      <h1>I build software you can inspect, test and reason about.</h1>
+      <p class="intro">I'm Leonardo Rosati, a software engineer and Computer Science undergraduate at the University of Bologna. My projects focus on reliable execution, explicit failure modes, machine-learning mechanisms and reproducible evaluation—not just API integrations.</p>
+      <div class="actions">
+        <a class="btn" href="#work">Explore the code</a>
+        <a class="btn secondary" href="https://github.com/lEoNardoToP">GitHub profile</a>
+      </div>
+    </div>
+    <section id="work" class="wrap" aria-labelledby="work-title">
+      <h2 id="work-title">Selected public work</h2>
+      <p class="sub">Two code-first projects with runnable examples and technical documentation. The links go directly to source, not marketing-only demos.</p>
+      <div class="cards">
+        <article>
+          <span class="kicker">Python · Linux · Observability</span>
+          <h3>AtlasGuard</h3>
+          <p>Linux host telemetry, inference observations, Population Stability Index drift signals, explainable runtime findings and Prometheus metrics.</p>
+          <ul class="facts">
+            <li>Inspect signal collection, drift math and explicit security rules.</li>
+            <li>Run local tests and a synthetic distribution-shift demo.</li>
+            <li>Review threat model and non-root container deployment.</li>
+          </ul>
+          <a href="https://github.com/lEoNardoToP/lEoNardoToP/tree/main/projects/atlasguard">Architecture, source and quick start</a>
+        </article>
+        <article>
+          <span class="kicker">C++ · Java · Algorithms · CI</span>
+          <h3>AI Algorithms Portfolio</h3>
+          <p>From-scratch reverse-mode autodiff and a Java DQN, alongside minimax/alpha-beta engines sharing one protocol across eight languages.</p>
+          <ul class="facts">
+            <li>Independent game-tree oracle, not only cross-implementation agreement.</li>
+            <li>Deterministic contracts and automated multi-language checks.</li>
+            <li>Short, reproducible commands for technical review.</li>
+          </ul>
+          <a href="https://github.com/lEoNardoToP/polyglot-alpha-beta-arena">Read the code and validation notes</a>
+        </article>
+      </div>
+    </section>
+    <section id="approach" class="wrap details" aria-labelledby="approach-title">
+      <div>
+        <h2 id="approach-title">How I engineer</h2>
+        <p>I value small, inspectable components, measurable acceptance criteria and clear boundaries between an implementation, its tests and the claims made about it. I document limitations where evidence is incomplete.</p>
+        <p>Typical tools: <span class="code">Python</span>, <span class="code">C++</span>, <span class="code">Java</span>, <span class="code">Docker</span>, <span class="code">Linux</span>, <span class="code">PyTorch</span> and <span class="code">pytest</span>.</p>
+      </div>
+      <div>
+        <h2>What I'm looking for</h2>
+        <p>Engineering work in AI/ML infrastructure, evaluation, backend and systems software, observability and developer tooling. I want to work on problems where correctness, reliability and technical depth matter.</p>
+        <p>My <a href="https://github.com/lEoNardoToP/lEoNardoToP">GitHub profile README</a> contains the recommended reviewer path and more technical context.</p>
+      </div>
+    </section>
+    <section id="contact" class="wrap">
+      <h2>Review the work. Start a conversation.</h2>
+      <p class="sub">For interviews, collaboration or technical discussion, start with the public repositories and their concrete trade-offs.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.linkedin.com/in/leonardo-rosati-97b863273/">Connect on LinkedIn</a>
+        <a class="btn secondary" href="https://github.com/lEoNardoToP">Open GitHub</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Leonardo Rosati · Code and evidence over unverified claims.</div></footer>
+</body>
+</html>
