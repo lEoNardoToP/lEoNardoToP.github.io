@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#0b1020">
   <title>Leonardo Rosati · AI Infrastructure & Software Engineering</title>
   <style>
+    ::selection{background:#7de3c2;color:#07151a} article{transition:transform .2s ease,border-color .2s ease} article:hover{transform:translateY(-3px);border-color:#608e92} @media(prefers-reduced-motion:reduce){article{transition:none}article:hover{transform:none}}
     :root {color-scheme: dark; --bg:#0b1020; --surface:#111a2d; --line:#293750; --text:#eaf0ff; --muted:#a5b4cb; --accent:#7de3c2;}
     * {box-sizing:border-box}
     html {scroll-behavior:smooth}
@@ -47,7 +48,7 @@
     <a class="brand" href="/">Leonardo Rosati</a>
     <nav aria-label="Primary">
       <a href="#work">Selected work</a>
-      <a href="#approach">Engineering approach</a>
+      <a href="#systems">Systems lab</a><a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -89,7 +90,8 @@
         </article>
       </div>
     </section>
-    <section id="approach" class="wrap details" aria-labelledby="approach-title">
+    <section id="systems" class="wrap"><p class="eyebrow">Engineering lab</p><h2>Four deeper systems</h2><p class="sub">Active research and engineering projects. Source remains private while release and reproducibility checks are completed.</p><div class="cards"><article><span class="kicker">AI evaluation</span><h3>AgentForge</h3><p>Behavioral grading, independent verifiers, bounded execution and auditable failure evidence. Docker release acceptance pending.</p></article><article><span class="kicker">Inference infrastructure</span><h3>InferMesh</h3><p>Fair request dispatch, admission quotas, cancellation ownership and worker recovery. Stress acceptance pending.</p></article><article><span class="kicker">C++ / GPU</span><h3>TensorForge</h3><p>Autodiff, graph optimization, planned memory reuse and optional native backends. Independent performance benchmarks pending.</p></article><article><span class="kicker">Durable systems</span><h3>NanoExchange</h3><p>Price-time matching, WAL, snapshots and fault-injected recovery. No physical power-loss certification claimed.</p></article></div><p class="sub" style="margin-top:24px">No fabricated demos or performance claims. Verified videos and benchmark artifacts will be linked only after recording and acceptance.</p></section>
+<section id="approach" class="wrap details" aria-labelledby="approach-title">
       <div>
         <h2 id="approach-title">How I engineer</h2>
         <p>I value small, inspectable components, measurable acceptance criteria and clear boundaries between an implementation, its tests and the claims made about it. I document limitations where evidence is incomplete.</p>
