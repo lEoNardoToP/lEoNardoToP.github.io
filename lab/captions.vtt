@@ -1,0 +1,24 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.000
+Recorded CPU demo output. Mock inference. Trusted local evaluation. No performance claim.
+
+00:00:08.000 --> 00:00:24.000
+Dead-code elimination removes an unreachable branch; CSE shares a duplicate addition.
+The eager interpreter remains the correctness reference. Native code generation is future work.
+
+00:00:24.000 --> 00:00:40.000
+Three new requests form two batches; repeating them produces three cache hits.
+Crash/deadline recovery has separate tests; this demo is the synchronous mock path.
+
+00:00:40.000 --> 00:00:56.000
+The second invocation recovers one persisted command, then adds another order.
+Retry idempotency and SIGKILL boundaries have separate regressions; this is restart replay.
+
+00:00:56.000 --> 00:01:12.000
+Six deliberately broken baselines fail; six known-good oracles pass.
+These are trusted fixtures, not a real model-agent benchmark or hostile-code certification.
+
+00:01:12.000 --> 00:01:22.000
+Source, commands and SHA-256 hashes accompany this capture.
+Italian study route: docs/STUDIARE_IN_14_GIORNI.md · 2–3 hours/day, 14 days.

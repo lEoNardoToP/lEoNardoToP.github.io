@@ -47,8 +47,8 @@
   <header class="wrap top">
     <a class="brand" href="/">Leonardo Rosati</a>
     <nav aria-label="Primary">
-      <a href="#work">Selected work</a>
-      <a href="#systems">Systems lab</a><a href="#approach">Approach</a>
+      <a href="#systems">Leonardo's Lab</a>
+      <a href="#work">Other work</a><a href="#approach">Approach</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -58,13 +58,19 @@
       <h1>I build software you can inspect, test and reason about.</h1>
       <p class="intro">I'm Leonardo Rosati, a software engineer and Computer Science undergraduate at the University of Bologna. My projects focus on reliable execution, explicit failure modes, machine-learning mechanisms and reproducible evaluation—not just API integrations.</p>
       <div class="actions">
-        <a class="btn" href="#work">Explore the code</a>
+        <a class="btn" href="#systems">Explore the code</a>
         <a class="btn secondary" href="https://github.com/lEoNardoToP">GitHub profile</a>
       </div>
     </div>
-    <section id="work" class="wrap" aria-labelledby="work-title">
-      <h2 id="work-title">Selected public work</h2>
-      <p class="sub">Two code-first projects with runnable examples and technical documentation. The links go directly to source, not marketing-only demos.</p>
+    <section id="systems" class="wrap"><p class="eyebrow">Leonardo's Lab</p><h2>Four deeper systems</h2><p class="sub">My main body of work: from tensor expressions to reliable execution. Each project ships a runnable example, explicit contracts, regression tests and dated, source-linked evidence. Open limits are written down, not hidden.</p><div class="cards">
+<article><span class="kicker">C++20 · Compilers / GPU</span><h3>TensorForge</h3><p>Typed tensor IR, generated backward graphs, native C++ code generation, LibTorch and Triton backends, and safe workspace reuse.</p><ul class="facts"><li>173 compiled graphs and 46,885 numerical comparisons in native code generation.</li><li>13 f32 operators and generated gradients checked on a real Tesla T4.</li></ul><a href="https://github.com/lEoNardoToP/Leonardo-sLab/tree/main/projects/tensorforge">Source and quick start</a></article>
+<article><span class="kicker">Python · Inference infrastructure</span><h3>InferMesh</h3><p>Fair dispatch across finite workers: batching, per-tenant admission quotas, deadlines, supervised processes, streaming HTTP/SSE and tracing.</p><ul class="facts"><li>Real CPU model streaming that matches greedy generation.</li><li>Quota is held until cancelled native work actually finishes.</li></ul><a href="https://github.com/lEoNardoToP/Leonardo-sLab/tree/main/projects/infermesh">Source and quick start</a></article>
+<article><span class="kicker">C++20 · Durable systems</span><h3>NanoExchange</h3><p>Price-time matching engine with an fsynced write-ahead log, fenced compaction and idempotent client retries.</p><ul class="facts"><li>1,852 injected POSIX fault scenarios across 14 call families.</li><li>No physical power-loss certification claimed.</li></ul><a href="https://github.com/lEoNardoToP/Leonardo-sLab/tree/main/projects/nanoexchange">Source and quick start</a></article>
+<article><span class="kicker">Python · AI evaluation</span><h3>AgentForge</h3><p>Tells a bad AI-agent submission apart from a broken evaluator: calibrated task contracts, Docker isolation and an independent grader.</p><ul class="facts"><li>Six known-good solutions pass, six deliberately broken ones fail.</li><li>Forged output footers and test patching are rejected.</li></ul><a href="https://github.com/lEoNardoToP/Leonardo-sLab/tree/main/projects/agentforge">Source and quick start</a></article>
+</div><div class="actions"><a class="btn" href="/lab/">Watch the 82-second walkthrough</a><a class="btn secondary" href="https://github.com/lEoNardoToP/Leonardo-sLab">Open Leonardo's Lab</a><a class="btn secondary" href="https://github.com/lEoNardoToP/Leonardo-sLab/blob/main/docs/REVIEWER_GUIDE.md">Five-minute review route</a></div></section>
+<section id="work" class="wrap" aria-labelledby="work-title">
+      <h2 id="work-title">Smaller public projects</h2>
+      <p class="sub">Two compact, code-first projects with runnable examples and CI. The links go directly to source.</p>
       <div class="cards">
         <article>
           <span class="kicker">Python · Linux · Observability</span>
@@ -90,8 +96,7 @@
         </article>
       </div>
     </section>
-    <section id="systems" class="wrap"><p class="eyebrow">Engineering lab</p><h2>Four deeper systems</h2><p class="sub">Active research and engineering projects. Source remains private while release and reproducibility checks are completed.</p><div class="cards"><article><span class="kicker">AI evaluation</span><h3>AgentForge</h3><p>Behavioral grading, independent verifiers, bounded execution and auditable failure evidence. Docker release acceptance pending.</p></article><article><span class="kicker">Inference infrastructure</span><h3>InferMesh</h3><p>Fair request dispatch, admission quotas, cancellation ownership and worker recovery. Stress acceptance pending.</p></article><article><span class="kicker">C++ / GPU</span><h3>TensorForge</h3><p>Autodiff, graph optimization, planned memory reuse and optional native backends. Independent performance benchmarks pending.</p></article><article><span class="kicker">Durable systems</span><h3>NanoExchange</h3><p>Price-time matching, WAL, snapshots and fault-injected recovery. No physical power-loss certification claimed.</p></article></div><p class="sub" style="margin-top:24px">No fabricated demos or performance claims. Verified videos and benchmark artifacts will be linked only after recording and acceptance.</p></section>
-<section id="approach" class="wrap details" aria-labelledby="approach-title">
+    <section id="approach" class="wrap details" aria-labelledby="approach-title">
       <div>
         <h2 id="approach-title">How I engineer</h2>
         <p>I value small, inspectable components, measurable acceptance criteria and clear boundaries between an implementation, its tests and the claims made about it. I document limitations where evidence is incomplete.</p>
